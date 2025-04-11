@@ -1,0 +1,84 @@
+identity:
+  name: kroki
+  author: zy
+  label:
+    en_US: Kroki Diagram Generator
+    zh_Hans: Kroki 图表生成器
+    pt_BR: Gerador de Diagramas Kroki
+description:
+  human:
+    en_US: Generate diagrams from textual descriptions using Kroki
+    zh_Hans: 使用 Kroki 从文本描述生成图表
+    pt_BR: Gere diagramas a partir de descrições textuais usando Kroki
+  llm: Generate various types of diagrams (UML, flowcharts, etc.) from textual descriptions using Kroki
+parameters:
+  - name: diagram_code
+    type: string
+    required: true
+    label:
+      en_US: Diagram Code
+      zh_Hans: 图表代码
+      pt_BR: Código do Diagrama
+    human_description:
+      en_US: The textual description/code for the diagram
+      zh_Hans: 图表的文本描述/代码
+      pt_BR: A descrição/código textual do diagrama
+    llm_description: The source code or textual description for generating the diagram
+    form: llm
+  - name: diagram_type
+    type: string
+    required: true
+    label:
+      en_US: Diagram Type
+      zh_Hans: 图表类型
+      pt_BR: Tipo de Diagrama
+    human_description:
+      en_US: The type of diagram (e.g., plantuml, mermaid, etc.)
+      zh_Hans: 图表类型（如 plantuml、mermaid 等）
+      pt_BR: The type of diagram (e.g., plantuml, mermaid, etc.)
+    llm_description: The diagram format to use (plantuml, mermaid, graphviz, etc.)
+    form: form
+    options:
+      - value: plantuml
+        label:
+          en_US: PlantUML
+          zh_Hans: PlantUML
+          pt_BR: PlantUML
+      - value: mermaid
+        label:
+          en_US: Mermaid
+          zh_Hans: Mermaid
+          pt_BR: Mermaid
+      - value: graphviz
+        label:
+          en_US: Graphviz
+          zh_Hans: Graphviz
+          pt_BR: Graphviz
+      - value: c4plantuml
+        label:
+          en_US: C4 PlantUML
+          zh_Hans: C4 PlantUML
+          pt_BR: C4 PlantUML
+      - value: d2
+        label:
+          en_US: D2
+          zh_Hans: D2
+          pt_BR: D2
+      - value: bpmn
+        label:
+          en_US: BPMN
+          zh_Hans: BPMN
+          pt_BR: BPMN
+      - value: erd
+        label:
+          en_US: ERD
+          zh_Hans: ERD
+          pt_BR: ERD
+      - value: svgbob
+        label:
+          en_US: SVGbob
+          zh_Hans: SVGbob
+          pt_BR: SVGbob
+extra:
+  python:
+    source: tools/kroki.py

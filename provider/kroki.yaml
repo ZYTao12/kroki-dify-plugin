@@ -1,0 +1,17 @@
+identity:
+  author: zy
+  name: kroki
+  label:
+    en_US: kroki
+    zh_Hans: kroki
+    pt_BR: kroki
+  description:
+    en_US: create your UML diagram with text strings
+    zh_Hans: create your UML diagram with text strings
+    pt_BR: create your UML diagram with text strings
+  icon: icon.svg
+tools:
+  - tools/kroki.yaml
+extra:
+  python:
+    source: provider/kroki.py
