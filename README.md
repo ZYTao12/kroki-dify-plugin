@@ -1,8 +1,8 @@
-## kroki
+## kroki-dify-plugin
 
 **Author:** zy
 **Version:** 0.0.1
-**Type:** extension
+**Type:** tool
 
 ### Description
 
